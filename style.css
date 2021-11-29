@@ -1,0 +1,150 @@
+/* body{
+    margin:auto;
+} */
+
+
+#form{
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.st0:hover{fill:#8bfaac;stroke:#FFFFFF;stroke-width:1}
+.st1:hover{fill:#FF9933;stroke:#FFFFFF;stroke-width:1}
+.st2:hover{fill:#0000FF;stroke:#FFFFFF;stroke-width:1}
+.st3:hover{fill:#0099AA;stroke:#FFFFFF;stroke-width:1} 
+.st4:hover{fill:#A0A0A0;stroke:#FFFFFF;stroke-width:1} 
+.st5:hover{fill:#330066;stroke:#FFFFFF;stroke-width:1}
+ 
+
+.st001{fill-rule:evenodd;clip-rule:evenodd;fill:red;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.Shahganj, .Jaunpur, .Badlapur, .Malhani, .Zahoorabad{fill-rule:evenodd;clip-rule:evenodd;fill:yellow;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill:gray;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st1{fill-rule:evenodd;clip-rule:evenodd;fill:gray;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st2{fill-rule:evenodd;clip-rule:evenodd;fill:gray;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st3{fill-rule:evenodd;clip-rule:evenodd;fill:gray;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st4{fill-rule:evenodd;clip-rule:evenodd;fill:gray;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st5{fill-rule:evenodd;clip-rule:evenodd;fill:gray;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+.st6{display:none;}
+
+/* form {
+    /* background-color: #4654e1; */
+    /* width: 300px; */
+    /* height: 44px; */
+    /* border-radius: 5px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center;
+  } 
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .btn {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  } */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #000;
+  padding: 0 20px;
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+} 
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
